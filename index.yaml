@@ -3,6 +3,60 @@ entries:
   cortex:
   - apiVersion: v2
     appVersion: v1.9.0
+    created: "2021-08-03T13:34:35.247117+05:30"
+    dependencies:
+    - alias: memcached
+      condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.13.0
+    - alias: memcached-index-read
+      condition: memcached-index-read.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.13.0
+    - alias: memcached-index-write
+      condition: memcached-index-write.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.13.0
+    - alias: memcached-frontend
+      condition: memcached-frontend.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.13.0
+    - alias: memcached-blocks-index
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - blocks-storage-memcached
+      version: 5.13.0
+    - alias: memcached-blocks
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - blocks-storage-memcached
+      version: 5.13.0
+    - alias: memcached-blocks-metadata
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - blocks-storage-memcached
+      version: 5.13.0
+    description: Horizontally scalable, highly available, multi-tenant, long term
+      Prometheus.
+    digest: a38d674f42052e5c0861647118efcc34505ff29be76da6f160fea48c9bed8f44
+    home: https://cortexmetrics.io/
+    icon: https://avatars2.githubusercontent.com/u/43045022?s=200&v=4
+    kubeVersion: ^1.19.0-0
+    name: cortex
+    sources:
+    - https://github.com/arjunbhandage/cortex-helm-chart
+    urls:
+    - https://arjunbhandage.github.io/helm-chart/cortex-0.7.0-alpha.tgz
+    version: 0.7.0-alpha
+  - apiVersion: v2
+    appVersion: v1.9.0
     created: "2021-08-03T13:20:54.741108+05:30"
     dependencies:
     - alias: memcached
@@ -61,12 +115,12 @@ entries:
   helm-chart-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-08-03T13:20:54.741624+05:30"
+    created: "2021-08-03T13:34:35.247643+05:30"
     description: A Helm chart for Kubernetes
-    digest: 649ede8e4584f8e6fe139d68f7821bff9e9223fa3e1eff4a2ef592720c850a4b
+    digest: e39d005d84694508c27aca8d146ba4cd47930c08ecf7b380e049bf84ba73b4b4
     name: helm-chart-test
     type: application
     urls:
     - https://arjunbhandage.github.io/helm-chart/helm-chart-test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-03T13:20:54.73281+05:30"
+generated: "2021-08-03T13:34:35.238626+05:30"
